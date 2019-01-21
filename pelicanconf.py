@@ -55,3 +55,8 @@ PLUGINS = [
     'liquid_tags.include_code',
     'render_math',
     'pelican-ipynb.markup' ] 
+	
+MARKUP = ('md', 'ipynb', 'html')
+
+#Ignore all files that start with a dot .
+IGNORE_FILES = ['.*','*-checkpoint.ipynb']
