@@ -7,6 +7,16 @@ SITENAME = 'Personal Blog'
 SITEURL = ''
 
 PATH = 'content'
+PAGE_PATHS = ['pages'] # where About goes
+ARTICLE_PATHS = ['posts']  # where .mds are
+
+# order the posts? default is by creation date, not modified
+# ARTICLE_ORDER_BY = 'attribute'
+# PAGE_ORDER_BY = 'attribute'
+
+# Top menus
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
 
 TIMEZONE = 'America/Denver'
 
@@ -58,9 +68,10 @@ PLUGINS = [
     'liquid_tags.notebook',
     'liquid_tags.include_code',
     'render_math',
-    'pelican-ipynb.markup',
-	'tipue_search'	] 
+    'pelican-ipynb.markup'
+	] 
 
+# cannot make the search work though, so remove 'tipue_search'
 	
 # CODE_DIR = 'code'	
 # NOTEBOOK_DIR = 'code'  # he had posts - and .md's in there
@@ -69,12 +80,13 @@ PLUGINS = [
 # IPYNB_USE_METACELL = True # not taking effect, still wants metada inside the .ipynb
 	
 # for Tique Search Plugin
-DIRECT_TEMPLATES = ('index','tags', 'categories', 'authors', 'archives', 'search')
+DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'authors', 'archives', 'search'))
 
-# for the custom css files
+# for the custom css files - Pelican does not create "static"?
 CUSTOM_CSS = 'static/css/custom.css'
 CUSTOM_JS = 'static/js/custom.js'
 # what kind of paths are these? - pelican copies from extra to output
+# but it is not working?
 
 STATIC_PATHS = [ 'extra' ]  # dir under root
 
