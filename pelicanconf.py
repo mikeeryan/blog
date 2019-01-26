@@ -44,14 +44,14 @@ DEFAULT_PAGINATION = 5
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-FAVICON = '/extra/favicon.ico'
+FAVICON = 'extra/favicon.ico'
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 PLUGIN_PATHS = ['pelican-plugins']
 
 THEME = 'pelican-themes/pelican-bootstrap3'
-BOOTSTRAP_THEME = 'flatly'
+BOOTSTRAP_THEME = 'cosmo'
 
 I18N_TEMPLATES_LANG = 'en'
 
