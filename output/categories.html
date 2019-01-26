@@ -191,7 +191,9 @@ init_mathjax();
     <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/css/custom.css" rel="stylesheet">
 
 
 
@@ -213,6 +215,9 @@ Personal Blog            </a>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li >
+                            <a href="/category/category.html">Category</a>
+                        </li>
+                        <li >
                             <a href="/category/example-posts.html">Example posts</a>
                         </li>
                         <li >
@@ -220,6 +225,11 @@ Personal Blog            </a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -239,12 +249,25 @@ Personal Blog            </a>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-example-posts">example posts <span class="badge pull-right">3</span></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-category">Category <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-category" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2100-12-31T00:00:00-07:00">Fri 31 December 2100</time></span> <a href="/with-metadata.html">This is the metadata inside the .ipynb!</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-example-posts">example posts <span class="badge pull-right">4</span></a>
                     </h4>
                 </div>
                 <div id="collapse-example-posts" class="panel-collapse collapse">
                     <div class="panel-body">
                         <p><span class="categories-timestamp"><time datetime="2017-11-30T12:40:00-07:00">Thu 30 November 2017</time></span> <a href="/first-post.html">First Post - Part 1</a></p>
+                        <p><span class="categories-timestamp"><time datetime="2017-11-30T12:40:00-07:00">Thu 30 November 2017</time></span> <a href="/fourth-post.html">Fourth Post - Part 4</a></p>
                         <p><span class="categories-timestamp"><time datetime="2017-11-30T12:40:00-07:00">Thu 30 November 2017</time></span> <a href="/second-post.html">Second Post - Part 2</a></p>
                         <p><span class="categories-timestamp"><time datetime="2017-11-30T12:40:00-07:00">Thu 30 November 2017</time></span> <a href="/third-post.html">Third Post - Part 3</a></p>
                     </div>
@@ -286,14 +309,23 @@ Personal Blog            </a>
 <li class="list-group-item">
   <a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
   <ul class="list-group " id="tags">
-    <li class="list-group-item tag-4">
+    <li class="list-group-item tag-1">
+      <a href="/tag/pelican.html">pelican</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="/tag/python.html">python</a>
+    </li>
+    <li class="list-group-item tag-1">
       <a href="/tag/blog.html">blog</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="/tag/python.html">python</a>
+      <a href="/tag/tables.html">tables</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="/tag/pelican.html">pelican</a>
+      <a href="/tag/tag2.html">tag2</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="/tag/tag1.html">tag1</a>
     </li>
   </ul>
 </li>
@@ -330,7 +362,7 @@ Personal Blog            </a>
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2017 Michael Eryan
+         <div class="col-xs-10">&copy; 2100 Michael Eryan
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
@@ -346,6 +378,7 @@ Personal Blog            </a>
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="/theme/js/respond.min.js"></script>
 
+    <script src="/static/js/custom.js"></script>
 
 
 <script type="text/javascript">

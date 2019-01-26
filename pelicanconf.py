@@ -45,6 +45,10 @@ BOOTSTRAP_THEME = 'flatly'
 
 I18N_TEMPLATES_LANG = 'en'
 
+MARKUP = ('md', 'ipynb', 'html')
+
+#Ignore all files that start with a dot .
+IGNORE_FILES = ['.*','*-checkpoint.ipynb']
 
 PLUGINS = [
     'i18n_subsites',
@@ -54,9 +58,27 @@ PLUGINS = [
     'liquid_tags.notebook',
     'liquid_tags.include_code',
     'render_math',
-    'pelican-ipynb.markup' ] 
-	
-MARKUP = ('md', 'ipynb', 'html')
+    'pelican-ipynb.markup',
+	'tipue_search'	] 
 
-#Ignore all files that start with a dot .
-IGNORE_FILES = ['.*','*-checkpoint.ipynb']
+	
+# CODE_DIR = 'code'	
+# NOTEBOOK_DIR = 'code'  # he had posts - and .md's in there
+
+# to grab metada from a cell in the notebook
+# IPYNB_USE_METACELL = True # not taking effect, still wants metada inside the .ipynb
+	
+# for Tique Search Plugin
+DIRECT_TEMPLATES = ('index','tags', 'categories', 'authors', 'archives', 'search')
+
+# for the custom css files
+CUSTOM_CSS = 'static/css/custom.css'
+CUSTOM_JS = 'static/js/custom.js'
+# what kind of paths are these? - pelican copies from extra to output
+
+STATIC_PATHS = [ 'extra' ]  # dir under root
+
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'static/css/custom.css'},
+    'extra/custom.js': {'path': 'static/js/custom.js'}
+}
