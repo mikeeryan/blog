@@ -1,13 +1,13 @@
-Title: First Post - Part 1
-Date: 2011-11-30 12:40
-Modified: 2011-11-30 12:40
+Title: First Post - Welcome
+Date: 2019-01-25 
+Modified: 2019-01-25
 Status: published
 Category: example posts
 Tags: python, pelican, blog
 Slug: first-post
-Authors: Peter D. Kazarinoff
+Authors: Michael Eryan
 Series: example-post-series
 Series_index: 1
-Summary: This is the first post of a series of demonstration posts.
+Summary: This is the first post on my blog.
 
-This is the first post of a series of demonstration posts.
+This is the first post on my blog.

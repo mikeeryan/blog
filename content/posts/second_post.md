@@ -1,15 +1,15 @@
-Title: Second Post - Part 2
-Date: 2012-11-30 12:40
-Modified: 2017-11-30 12:40
+Title: Second Post
+Date: 2019-01-26 
+Modified: 2019-01-26
 Status: published
 Category: example posts
-Tags: python, pelican, blog
+Tags: jupyter
 Slug: second-post
-Authors: Peter D. Kazarinoff
+Authors: Michael Eryan
 Series: example-post-series
 Series_index: 2
-Summary: This is the second post of a series of posts. It will show series and an embeded youtube video.
+Summary: This is the second post of a series of posts. It will show an example jupyter notebook.
 
-This is the second post of a series of posts. It will show series and an embedded youtube video.
+This post contains an embedded sample jupyter notebook.
 
-{% youtube https://www.youtube.com/watch?v=Qq-5frjUfK0 [560] [315] %}
+{% notebook ../code/sample_notebook.ipynb %}
