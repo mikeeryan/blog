@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Michael Eryan'
-SITENAME = 'Personal Blog'
+SITENAME = "Michael's Blog"
 SITEURL = ''
 
 PATH = 'content'
@@ -33,11 +33,10 @@ AUTHOR_FEED_RSS = None
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 5
 
